@@ -1,0 +1,106 @@
+/* PostPlans.css */
+
+.plan-card {
+    margin-right: 10px; /* Add spacing between cards */
+  }
+  
+  /* Add any other custom styling as needed */
+/* PostPlans.css */
+
+/* ... (other styles) */
+
+.container{
+    margin-top: 100px;
+}    
+.tabless{
+    margin-top: 7%;
+    
+}
+.paymenthistory{
+  
+    color: green;
+}
+.title-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .plans-title {
+    font-size: 44px;
+    font-weight: bold;
+    
+  }
+  
+/* YourComponent.css */
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px); /* Adjust the value to control the floating height */
+    }
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .plans-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    animation: float 3s infinite; /* Adjust animation duration as needed */
+  }
+  
+  .floating-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    animation: float 3s infinite alternate; /* Adjust animation duration as needed */
+    animation-delay: 1.5s; /* Delay the start of the animation */
+    color: #007bff; /* Adjust text color as needed */
+  }
+  
+  .plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .plan-card {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .plan-card .card-text {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .plan-card .btn {
+    width: 100%;
+  }
+.loading-spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; /* Full viewport height */
+  }
+  .loading-spinner {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+  }
+    
+.pagination{
+  margin-left: 40%;
+}
+

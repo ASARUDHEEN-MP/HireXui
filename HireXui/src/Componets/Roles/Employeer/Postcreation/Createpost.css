@@ -1,0 +1,26 @@
+.create-post-container {
+    max-width: 600px;
+    margin: 40px auto; /* Adjust the top margin as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-post-header {
+    text-align: center;
+  }
+  
+  .form-table {
+    width: 100%;
+  }
+  
+  .table-label {
+    font-weight: bold;
+  }
+  
+  .post-form {
+    margin-top: 20px;
+  }
+  

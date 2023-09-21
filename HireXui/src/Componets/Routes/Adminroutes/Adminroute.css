@@ -1,0 +1,61 @@
+/* Adminroute.css */
+
+/* Style for the entire admin container */
+.admin-container {
+    display: flex;
+  }
+  
+  /* Style for the sidebar */
+  .admin-sidebar {
+    background-color: #4969f9;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 350ms;
+    z-index: 100;
+  }
+  
+  /* Style for the content area */
+  .admin-content {
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Media query for responsive design */
+  @media screen and (max-width: 768px) {
+    .admin-sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      transition: none;
+    }
+    
+    .admin-content {
+      margin-left: 0;
+    }
+    
+    /* Adjust other styles as needed */
+  }
+  
+  /* Other styles as needed */
+  .navbar {
+    background-color: #4969f9;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* ... rest of your CSS ... */
+  

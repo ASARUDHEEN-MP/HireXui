@@ -1,0 +1,144 @@
+/* Signup.css */
+
+.custom-parent-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .custom-container-fluid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-padding-4 {
+    padding: 1rem;
+  }
+  
+  .custom-margin-top-5 {
+    margin-top: 5rem;
+  }
+  
+  .custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .custom-col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .custom-text-center {
+    text-align: center !important;
+  }
+  
+  .custom-text-md-start {
+    text-align: left !important;
+  }
+  
+  .custom-flex-column {
+    flex-direction: column !important;
+  }
+  
+  .custom-justify-content-center {
+    justify-content: center !important;
+  }
+  
+  .custom-heading {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+  }
+  
+  .custom-display-3 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+  }
+  
+  .custom-fw-bold {
+    font-weight: bold !important;
+  }
+  
+  .custom-ls-tight {
+    letter-spacing: -0.03rem;
+  }
+  
+  .custom-text-primary {
+    color: #007bff !important;
+  }
+  
+  .custom-paragraph {
+    font-size: 1rem;
+  }
+  
+  .custom-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  
+  .custom-card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+  
+  .custom-mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .custom-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .custom-btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .custom-btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  

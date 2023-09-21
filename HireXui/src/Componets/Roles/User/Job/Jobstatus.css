@@ -1,0 +1,36 @@
+/* Jobstatus.css */
+.jobstatus-container {
+    padding: 20px;
+  }
+  
+  .jobstatus-title {
+    text-align: center;
+    background-color: rgb(109, 160, 240);
+    color: white;
+  }
+  
+  .jobstatus-table {
+    margin-top: 20px;
+    background-color: #fff; /* Table background color */
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-logo {
+    max-width: 30px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-weight: bold;
+  }
+  
+  /* Add more custom styles as needed */
+/* Jobstatus.css */
+
+/* Add your existing CSS styles here */
+
+/* Add your existing CSS styles here */
