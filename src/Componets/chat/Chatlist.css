@@ -1,0 +1,120 @@
+.full-page-container {
+  margin-top: 0;
+  padding: 0;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  
+}
+  .full-height-row {
+    height: 100%;
+    
+  }
+
+/* Update your CSS */
+.top-border {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px; /* Adjust font size as needed */
+    color: black; /* Text color */
+  }
+
+
+  .profile-pic-container {
+    width: 40px; /* Set the width and height to create a round circle */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflow content to maintain circle shape */
+    margin-left: 10px; /* Add some spacing to the right */
+  }
+  .search{
+    width:89%;
+    background-color: transparent;
+  }
+  /* Style the circular member images */
+
+  
+  
+  
+/* .right-square */
+.right-square {
+  background-color: rgb(244, 244, 251);
+  padding: 0; /* Remove default padding */
+}
+
+/* Style the circular member images */
+.member-image {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the circular container */
+  border-radius: 50%; /* Make the image circular */
+}
+
+/* Style the rectangular box */
+.rectangular-box {
+  width: 99%;
+  background-color: white;
+  border: 1px solid #000;
+  height: 50px;
+  border-radius: 15px;
+  /* Add any additional styling as needed */
+}
+
+/* .chat-content */
+.chat-content {
+  max-height: calc(100vh - 220px); /* Set max height to take available viewport space */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  padding: 10px; /* Add some padding for better readability */
+}
+
+/* .left-square */
+.left-square {
+  background-color: rgb(61, 61, 74);
+}
+
+/* Style the message input and send button */
+.message-input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust styles for screens smaller than 768px (e.g., tablets and mobiles) */
+  .right-square {
+    padding: 15px; /* Add padding to the right square for better spacing */
+  }
+
+  .message-input {
+    width: 70%; /* Reduce the width of the message input */
+  }
+
+  .send-button {
+    margin-left: 5px; /* Reduce the margin between input and button */
+  }
+}
+/* Add this to your existing CSS file or create a new one */
+/* Style for the green dot */
+.unread {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}

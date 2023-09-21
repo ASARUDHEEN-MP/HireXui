@@ -1,0 +1,71 @@
+/* Otp.css */
+.otp-Form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .mainHeading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .otpSubheading {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .verifyButton {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .resendNote {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .resendBtn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  
+  /* Additional styles for ToastContainer */
+  .Toastify__toast-container {
+    z-index: 9999;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .otp-container{
+  
+    margin-top: 200px;
+  }

@@ -1,0 +1,58 @@
+/* Wallet.css */
+
+.wallet-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .amount-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .amount-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .amount-value {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 0;
+  }
+  
+  .history-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .post-history-table {
+    width: 100%;
+  }
+  
+  .post-history-table th,
+  .post-history-table td {
+    text-align: center;
+  }
+  
+  .post-history-table th {
+    font-weight: bold;
+  }
+  
+  .small-box {
+    background-color: #f0f0f0;
+    border: 1px solid #282a2c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Make it inline block to fit content */
+    margin: 0 auto; /* Center horizontally */
+  }
+.amount-value{
+  text-align: center;
+}

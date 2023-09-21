@@ -1,0 +1,204 @@
+/* Chat.css */
+.chat-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Set a background color */
+  }
+  
+  .chat-box {
+    width: 600px; /* Define the width */
+    height: 85%; /* Define the height (adjust as needed) */
+    background-color: #ffffff; /* Set a background color for the square box */
+    border: 1px solid #ccc; /* Add a border for the square box */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the separator vertically */
+    border-radius: 25px;
+  }
+  .chat-content{
+    width: 100%;
+  }
+  
+  
+  /* Chat.css */
+
+/* ... (previous styles) */
+
+.chat-header {
+    display: flex;
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add some padding for spacing */
+    width: 100%;
+    background-color: rgb(158, 183, 239);
+    
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .profile-circle {
+    width: 60px; /* Define the circle's width and height */
+    height: 60px;
+    background-color: #ccc; /* Background color for the circle */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide image overflow */
+    margin-right: 20px; /* Add margin for spacing */
+  }
+  
+  .profile-image {
+    width: 100%; /* Make the image fill the circle */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .username-container {
+    display: flex;
+    flex-direction: column; /* Stack the username below the circle */
+    align-items: center; /* Center horizontally */
+  }
+  
+  .username {
+    font-size: 18px; /* Customize the font size */
+    font-weight: bold; /* Customize font weight or styles as needed */
+    margin-top: 8px; /* Add spacing between the circle and username */
+  }
+
+/* Chat.css */
+
+/* ... (previous styles) */
+
+.chat-input {
+    margin-top: auto; /* Push the chat-input to the bottom of the chat-box */
+    padding: 10px; /* Add padding for input field and button */
+    background-color: #fff; /* Background color for the input area */
+    width: 96%;
+    
+  }
+  
+  /* Chat.css */
+
+/* ... (previous styles) */
+
+.input-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Add padding for input field and button */
+    background-color: #fff; /* Background color for the input area */
+    position: relative; /* Add relative positioning */
+   
+  }
+  
+  .message-input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    outline: none;
+    padding-right: 50px; /* Leave space for the send button */
+    white-space: pre-wrap; /* Allow text to wrap */
+    word-wrap: break-word; /* Enable text wrapping */
+   
+  }
+  
+  
+  
+ 
+  
+  .send-button {
+    background-color: #e1e8ee;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute; /* Position it absolutely */
+    right: 20px; /* Adjust the right position as needed */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Center it vertically */
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ... (other styles) */
+/* Add these styles to your Chat.css file */
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+ /* Add these styles to your Chat.css file */
+
+/* Style for received messages */
+.received {
+    background-color: #e6e6e6; /* Background color for received messages */
+    color: #333; /* Text color for received messages */
+    max-width: 80%; /* Limit received message width */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px; /* Rounded corners for received messages */
+    text-align: right; /* Right-align received messages */
+    clear: both; /* Ensure that received messages don't wrap around sent messages */
+    float: right;
+  }
+  .received .checkmark {
+    font-size: 18px; /* Adjust the size of the checkmark */
+    color: #009900; /* Color of the checkmark icon */
+    margin-right: 5px; /* Add spacing between the checkmark and the message text */
+  }
+  
+  
+  /* Style for sent messages */
+  .send {
+    background-color: #007bff; /* Background color for sent messages */
+    color: #fff; /* Text color for sent messages */
+    max-width: 80%; /* Limit sent message width */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px; /* Rounded corners for sent messages */
+    text-align: left; /* Left-align sent messages */
+    clear: both; /* Ensure that sent messages don't wrap around received messages */
+    float: left;
+  }
+  
+  /* Chat.css */
+/* ... (previous styles) */
+
+/* Style for sent messages */
+.send {
+    background-color: #007bff; /* Background color for sent messages */
+    color: #fff; /* Text color for sent messages */
+    max-width: 80%; /* Limit sent message width */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px; /* Rounded corners for sent messages */
+    text-align: left;
+    position: relative; /* Position relative for the sent messages */
+  }
+  
+  .send .checkmark {
+    position: absolute;
+    right: -25px; /* Adjust the right position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; /* Adjust the size of the checkmark */
+    color: #009900; /* Color of the checkmark icon */
+  }
+  
+  /* ... (other styles) */
+  
