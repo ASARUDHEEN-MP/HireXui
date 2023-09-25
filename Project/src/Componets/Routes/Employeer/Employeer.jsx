@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../../Navbar/Commannav/Navbar';
 // import Checkemployeer from '../privateRouter/Checkemployeer';
-import Login from '../../Comman/Login';
+import Login from '../../Roles/Comman/Login';
 import Requireemployeer from '../../Feature/Require/Requireemployeer';
 import PrivateRoute from '../PrivateRoute';
 // here
