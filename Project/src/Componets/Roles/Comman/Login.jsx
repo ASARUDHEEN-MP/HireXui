@@ -1,25 +1,16 @@
 import React, { useState } from 'react';
-import {
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-} from 'mdb-react-ui-kit';
+import './Login.css';
+import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { setCredentials } from '../../Feature/Slice/Authslice';
 import instance from '../../../axios';
-import './Login.css';
-import Cookies from 'js-cookie';
 
-function Login({ user }) {
-  const [email, setEmail] = useState('');
+function Login() {
   const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const dispatch = useDispatch();
   const [showPassword, setShowPassword] = useState(false);
@@ -72,92 +63,60 @@ function Login({ user }) {
         toast.error('Invalid password.');
       } else if (error.response.data.message === 'User not found.') {
         toast.error('User not found.');
+      } else if (error.response.data.message === 'User is not active.') {
+        toast.error('User not active. Contact the admin.');
       }
     }
   };
 
   return (
-    
-    <div className="parentContainer">
-      
-      <MDBContainer fluid className="p-4 mt-5">
-        <MDBRow>
-          <MDBCol md="6" className="text-center text-md-start d-flex flex-column justify-content-center">
-            <h1 className="my-4 display-3 fw-bold ls-tight px-3">
-              One click
-              <br />
-              <span className="text-primary"> Apply using HireX Profile.</span>
-            </h1>
-            <img className="my-4 img-fluid" src="https://quantumhunts.com/user/assets/images/hero/hiring-manager-quantumhunts.gif" alt="Netflix Logo" />
-          </MDBCol>
-
-          <MDBCol md="6">
-            <MDBCard className="loginform">
-              <MDBCardBody className="p-5">
-                <form onSubmit={handleLogin}>
-                  <MDBRow>
-                    <MDBCol md="12">
-                      <MDBInput
-                        label="Email"
-                        id="email"
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                      />
-                    </MDBCol>
-                  </MDBRow>
-
-                  <MDBRow>
-                    <MDBCol md="12">
-                      <div className="password-container">
-                        <MDBInput
-                          label="Password"
-                          id="password"
-                          type={showPassword ? 'text' : 'password'}
-                          value={password}
-                          onChange={(e) => setPassword(e.target.value)}
-                          required
-                        />
-                        <a className="show" onClick={togglePasswordVisibility}>
-                          {showPassword ? 'Hide Password' : 'Show Password'}
-                        </a>
-                      </div>
-                    </MDBCol>
-                  </MDBRow>
-
-                  <MDBRow>
-                    <MDBCol md="12">
-                      <p>
-                        <a href="/forgotpassword">Forgot Password?</a>
-                      </p>
-                    </MDBCol>
-                  </MDBRow>
-
-                  <MDBRow>
-                    <MDBCol md="12">
-                      <MDBBtn className="w-100 mb-4" size="md" type="submit">
-                        Login
-                      </MDBBtn>
-                    </MDBCol>
-                  </MDBRow>
-
-                  <MDBRow>
-                    <MDBCol md="12" className="text-center">
-                      <p>
-                        Don't have an account? <a href="/signup">Sign up</a>
-                      </p>
-                    </MDBCol>
-                  </MDBRow>
-                </form>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+    <section>
+      <div className="signin">
+        <div className="content">
+          <h2>Log In</h2>
+          <div className="form">
+            <form onSubmit={handleLogin}>
+              <div className="inputBox">
+                <input
+                  type="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <i>Email</i>
+              </div>
+              <div className="inputBox">
+                <input
+                  type={showPassword ? 'text' : 'password'} // Toggle password visibility
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+                <i>Password</i>
+                <div
+                  className={`show-password ${showPassword ? 'active' : ''}`}
+                  onClick={togglePasswordVisibility}
+                >
+                  {showPassword ? '🙈' : '👁️'}
+                </div>
+              </div>
+              <div className="links">
+              <a href="/forgotpassword">Forgot Password?</a>
+                <a href="/signup">Sign up</a>
+              </div>
+              <div className="inputBox">
+                <input type="submit" value="Login" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <ToastContainer />
-    </div>
+    </section>
   );
 }
 
 export default Login;
+
+
+

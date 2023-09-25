@@ -6,7 +6,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Otp from '../../Roles/Comman/Otp/otp';
 import Signup from '../../Roles/Comman/Usersignup/Signup';
 import ForgotPassword from '../../Roles/Comman/ForgotPassword';
-
 function Comman() {
 
     const role = localStorage.getItem('userRole');

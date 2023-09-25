@@ -1,38 +1,76 @@
-
 /* UserNavbar.css */
-/* Usernavbar.css */
+
+/* General styles for your navbar */
+.bg-body-tertiary {
+  background-color: #f8f9fa !important; /* Adjust as needed */
+}
+
+.nav-link-effect {
+  color: #000 !important; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.nav-link-effect:hover {
+  color: #007bff !important; /* Adjust as needed */
+}
+
+.navbar-toggler {
+  background-color: #007bff !important; /* Adjust as needed */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff !important; /* Adjust as needed */
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
+/* Change background and text color when navbar is collapsed (toggled) */
+@media (max-width: 991px) {
+  .navbar-collapse.show { /* Change to .navbar-collapse.show */
+    background-color: rgb(126, 166, 237); /* Change to your desired background color */
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important; /* Change to your desired text color */
+  }
+
+  /* You can add more styles as needed */
+}
+
+/* Modal styles for displaying followers */
 .followers-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .followers-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .followers-content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .followers-content li {
-    margin-bottom: 10px;
-  }
-  
-  .followers-content button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: blue; /* You can adjust the color */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.followers-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.followers-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.followers-content li {
+  margin-bottom: 10px;
+}
+
+.followers-content button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: blue; /* You can adjust the color */
+}

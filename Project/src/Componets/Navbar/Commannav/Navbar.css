@@ -1,27 +1,43 @@
+/* Navbar styles */
 .custom-navbar {
-   
-    height: 80px; /* Adjust the desired height */
-    padding: 10px 0; /* Add padding for vertical spacing */
-    /* Add more styles as needed */
-    
-    
-  }
-  
+  height: 80px; /* Adjust the desired height */
+  padding: 10px 0; /* Add padding for vertical spacing */
+}
 
-.test{
+.test {
   background-color: white;
   position: fixed;
   height: 80px;
+  margin-bottom:20px;
 }
+
 .logo {
   width: 110px;
   margin-top: 20px;
   margin-left: 10px;
 }
-.nn{
-  background-color: blue;
-}
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Apply styles only when the screen width is 768px or less */
+  .custom-navbar {
+    padding: 10px; /* Add some padding to the navbar for better mobile view */
+  }
+
+  .logo {
+    width: 50px; /* Adjust the logo width for smaller screens */
+  }
+
+  .company-title {
+    font-size: 20px; /* Adjust the font size for the title on smaller screens */
+  }
+
+  .click-here a {
+    text-decoration: underline; /* Add underline to the "Click here" link */
+    font-weight: bold; /* Add bold font weight to the link */
+    margin-left: 8px; /* Add some spacing between the title and the link */
+  }
+}
 
 
 /* Reset some default styles for consistency */
@@ -72,97 +88,5 @@ body {
   padding: 20px;
 }
 
-.admin-header {
-  background-color: #34495E;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.admin-content {
-  background-color: #ECF0F1; /* Light gray */
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.admin-footer {
-  background-color: #34495E;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
 
 
-
-
-
-
-/* admin */
-
-
-.side-menu {
-  background-color: #f8f9fa;
-  border-right: 1px solid #e1e1e1;
-  height: 100vh;
-  overflow-y: auto;
-  padding: 20px;
-}
-
-.side-menu-container ul.nav.navbar-nav {
-  padding: 0;
-}
-
-.side-menu-container ul.nav.navbar-nav li {
-  list-style-type: none;
-  margin: 0;
-}
-
-.side-menu-container ul.nav.navbar-nav li a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
-}
-
-.side-menu-container ul.nav.navbar-nav li.active a {
-  font-weight: bold;
-}
-
-.side-menu-container ul.nav.navbar-nav li.panel a {
-  position: relative;
-  display: block;
-}
-
-.side-menu-container ul.nav.navbar-nav li.panel .caret {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-}
-
-.side-menu-container ul.nav.navbar-nav .panel-collapse {
-  background-color: #f8f9fa;
-}
-
-.side-menu-container ul.nav.navbar-nav .panel-body {
-  padding: 0;
-}
-
-.side-menu-container ul.nav.navbar-nav .panel-body ul.nav.navbar-nav {
-  margin: 0;
-}
-
-.side-menu-container ul.nav.navbar-nav .panel-body ul.nav.navbar-nav li a {
-  padding-left: 20px;
-}
-
-.side-menu-container ul.nav.navbar-nav .panel-body ul.nav.navbar-nav li.panel .caret {
-  top: 50%;
-  right: 5px;
-}
-
-.side-menu-container ul.nav.navbar-nav .panel-body ul.nav.navbar-nav .panel-collapse {
-  background-color: #f8f9fa;
-  padding: 0;
-}
