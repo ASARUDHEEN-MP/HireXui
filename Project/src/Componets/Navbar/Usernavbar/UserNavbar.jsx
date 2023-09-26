@@ -23,7 +23,7 @@ function UserNavbar() {
     try {
       console.log('Searching for jobs with query:', searchQuery);
   
-      const response = await fetch(`http://127.0.0.1:8000/search-jobposts/?skills=${searchQuery}`);
+      const response = await fetch(`http://18.191.143.204/search-jobposts/?skills=${searchQuery}`);
       
       if (response.ok) {
         const data = await response.json();

@@ -10,6 +10,7 @@ import instance from '../../../../axios';
 function Home() {
   const navigate = useNavigate();
   const [categories,setcategories]=useState([])
+  console.log(categories)
  console.log(categories)
   useEffect(()=>{
     const fetchData = async () => {

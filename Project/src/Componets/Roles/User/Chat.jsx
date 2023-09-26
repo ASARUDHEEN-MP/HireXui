@@ -21,7 +21,7 @@ function Chat() {
   console.log(messages)
   useEffect(() => {
     // Define the WebSocket URL for your Django Channels consumer
-    const socket = new WebSocket(`ws://localhost:8000/ws/chat/${userid}/`);
+    const socket = new WebSocket(`ws://18.191.143.204/ws/chat/${userid}/`);
     setSocket(socket)
     // WebSocket event listeners
     socket.onopen = () => {
