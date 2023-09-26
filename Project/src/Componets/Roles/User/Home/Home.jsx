@@ -209,7 +209,7 @@ function Home() {
     <Row>
       <Col md={4}>
         <h5>Contact Us</h5>
-        <p>Email: info@yourcompany.com</p>
+        <p>Email: Hirex66@gmail.com</p>
         <p>Phone: (123) 456-7890</p>
       </Col>
       <Col md={4}>
@@ -229,7 +229,7 @@ function Home() {
     </Row>
     <Row>
       <Col>
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>&copy; 2023 Hirex. All rights reserved.</p>
       </Col>
     </Row>
   </Container>
