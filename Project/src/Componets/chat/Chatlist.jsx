@@ -71,6 +71,8 @@ function Chatlist() {
       try {
         const response = await instance.get(`chat/messages/${userid}/${companyId}/`);
         const socket = new WebSocket(`wss://theclimber.shop/ws/chat/${userid}/`);
+        console.log(socket)
+        console.log('hey')
         setSocket(socket);
 
         let fetchedMessages = response.data.payload;
