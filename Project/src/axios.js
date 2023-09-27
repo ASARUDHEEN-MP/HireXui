@@ -2,9 +2,9 @@ import axios from "axios";
 import Cookies from 'js-cookie';
 
 
-// const baseURL = "http://127.0.0.1:8000/"
+const baseURL = "http://127.0.0.1:8000/"
 
-const baseURL = "https://www.theclimber.shop/"
+
 
 const instance = axios.create({
     baseURL:baseURL,
